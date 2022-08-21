@@ -1,3 +1,44 @@
+# openSSL
+
+OpenSSL is an open-source command line tool that is commonly used to generate private keys, create CSRs, install your SSL/TLS certificate, and identify certificate information.
+ 
+## Task 1, Getting started: Start your PC (Windows or Linux) with an OpenSSL installation
+### a.	Start the OpenSSL command line.  
+We used the commands “openssl” to open the source commands. The openssl program provides a rich variety of commands each of which often has a wealth of options and arguments
+
+![Picture1](https://user-images.githubusercontent.com/93491482/185805709-b98aacef-75a9-47b5-8cc8-2e7ef821e22e.png)
+
+### b. List commands by type
+Now we see that all the standard commands, message digest commands, and the cipher command after we use openssl. Next is we will use openssl list -commands to see all the list commands. 
+
+<img width="469" alt="Picture2" src="https://user-images.githubusercontent.com/93491482/185805850-71893b71-ed48-4c3e-bf0b-987781a16399.png">
+
+Then next we will use openssl list -cipher-commands to see all the list of ciphertext that you have on your operating system. 
+
+<img width="468" alt="Picture3" src="https://user-images.githubusercontent.com/93491482/185805931-cfe1fe6c-8452-4f19-9964-69bbde87b323.png">
+
+Next is using openssl list -digest-commands to see all list all digest commands. These commands are used to generate as well as verify signatures.
+
+<img width="468" alt="Picture4" src="https://user-images.githubusercontent.com/93491482/185806052-4ecbd21b-49a4-4d23-8c1a-e203e4b7e1ee.png">
+
+### c.	Use the help to find out more about OpenSSL
+Next, we will be using openssl help. This command helps to find out the further details
+
+![Picture5](https://user-images.githubusercontent.com/93491482/185806139-aa657aba-1b95-4606-a640-fa4e4632a576.png)
+
+## Task2, Performance of OpenSSL
+### a.	Make a speed test on your PC-platform with the speed command. We use the “openssl speed” command to shows the speed test.
+
+![Picture6](https://user-images.githubusercontent.com/93491482/185806177-4c304445-1b08-4b52-8632-475129a4ea6f.png)
+![Picture7](https://user-images.githubusercontent.com/93491482/185806201-facad1de-a5a7-4f51-97dd-37e13174d33f.png)
+![Picture8](https://user-images.githubusercontent.com/93491482/185806206-059e831e-3811-4185-8a52-bf618747a04e.png)
+
+### b.	Compare the results for symmetric encryption (e.g., AES-CBC) and RSA signature.
+Next is we will use openssl speed rsa2048 to Compare the results for symmetric encryption and RSA signature.
+
+![Picture9](https://user-images.githubusercontent.com/93491482/185806279-60f8bb62-812c-4b0e-9b31-d8fe01fffa38.png)
+
+
 ## Taks 3, Using OpenSSL from the command line interface
 
 Now, our goal is to create a text file that can be encrypted in three different types. For this, I have to create a directory for this project and access this directory. So, I used my terminal and went to my desire folder, and type
